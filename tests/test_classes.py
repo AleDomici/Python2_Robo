@@ -1,4 +1,9 @@
 import pytest
+import sys
+import os
+
+# Adiciona o diretório pai ao sys.path
+sys.path.insert(0, os.path.abspath(os.path.join(os.path.dirname(__file__), '..')))
 
 from robo.robo_explorador import RoboExplorador
 from robo.relatorio_de_missao import RelatorioDeMissao
